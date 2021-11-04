@@ -32,7 +32,10 @@ public class RestStaticExample {
 	@Test
 	void test02() {
 
-		given().get("https://reqres.in/api/users/2").then().statusCode(200);
+		given().get("https://reqres.in/api/users/2")
+		.then()
+			.statusCode(200);
+			
 
 
 	}
