@@ -62,6 +62,16 @@ public class RestStaticExample {
 	     <version>2.10.3</version>
 	</dependency>
 		
+	<dependency>
+	  <groupId>com.github.dzieciou.testing</groupId>
+	  <artifactId>curl-logger</artifactId>
+	  <version>2.1.0</version>
+	</dependency>
+	
+	RestAssured.baseURI = "https://restapi.demoqa.com/utilities/weather/city";
+	RequestSpecification httpRequest = RestAssured.given();
+	Response response = httpRequest.get("/Hyderabad");
+
 		
 	}
 }
